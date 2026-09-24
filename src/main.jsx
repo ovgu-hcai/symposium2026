@@ -11,10 +11,29 @@ const speakers = Array.from({ length: 6 }, (_, index) => ({ id: index + 1, name:
 
 const schedule = [
   {
-    day: "Day 01", date: "30 November 2026", weekday: "Monday"
+    day: "Day 01", date: "30 November 2026", weekday: "Monday",
+    items: [
+      { time: "13:00 – 14:00", type: "session", title: "Welcome", speaker: "Speaker TBA" },
+      { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "15:00 – 15:30", type: "break", title: "Coffee Break" },
+      { time: "15:30 – 16:30", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "16:30 – 17:30", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "18:30", type: "special", title: "Meet and Greet", speaker: "Innovation Xperience Incubator" }
+    ]
   },
   {
-    day: "Day 02", date: "1 December 2026", weekday: "Tuesday"
+    day: "Day 02", date: "1 December 2026", weekday: "Tuesday",
+    items: [
+      { time: "08:00 – 09:00", type: "break", title: "Welcome Coffee" },
+      { time: "09:00 – 10:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "10:00 – 11:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "11:00 – 13:00", type: "break", title: "Lunch Break" },
+      { time: "13:00 – 14:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "15:00 – 15:30", type: "break", title: "Coffee Break" },
+      { time: "15:30 – 16:30", type: "session", title: "Panel Discussion", speaker: "Panellists TBA" },
+      { time: "16:30", type: "special", title: "Closing Session", speaker: "Details TBA" }
+    ]
   }
 ];
 
@@ -22,9 +41,9 @@ const organisers = [
   { group: "General Chair", name: "Prof. Dr.-Ing. Ernesto William De Luca", role: "Head, Human-Centred Artificial Intelligence Research Group", image: "./images/organisers/ernesto.jpg", email: "ernesto.deluca@ovgu.de", website: "https://ernestodeluca.eu/cv" },
   { group: "Local Organising Committee", name: "M.Sc. Het Darshan Mehta", role: "PhD Researcher · HCAI, OVGU", image: "./images/organisers/het.jpeg", email: "het.mehta@ovgu.de", website: "https://hetmehta.eu/" },
   { group: "Local Organising Committee", name: "M.Sc. Iveta Jaroscakova", role: "Innovation Experience Incubator Coordinator", image: "./images/organisers/iveta.jpeg", email: "iveta.jaroscakova@ovgu.de", website: "https://www.hcai.ovgu.de/" },
-  { group: "Staff", name: "B.Sc. Gavin Rony Correia", role: "Student Assistant · HCAI", image: "./images/organisers/gavin.jpeg", email: "gavin.correia@gei.de", website: "https://www.hcai.ovgu.de/" },
-  { group: "Staff", name: "B.Sc. Shivnandini Ravikumar Chinnannvar", role: "Student Assistant · HCAI", image: "./images/organisers/shivnandini.jpeg", email: "shivnandini.chinnannvar@gei.de", website: "https://www.hcai.ovgu.de/" },
-  { group: "Social Media & Digital Outreach", name: "B.Sc. Yashashwini Sidramappa Awate", role: "Tutor · Digital Communication", image: "./images/organisers/yashashwini-awate.jpg", email: "yashashwini.awate@st.ovgu.de", website: "https://de.linkedin.com/in/yashashwini-awate-b2abb4227" }
+  { group: "Staff", name: "B.Sc. Gavin Rony Correia", role: "", image: "./images/organisers/gavin.jpeg", email: "gavin.correia@gei.de", website: "https://www.hcai.ovgu.de/" },
+  { group: "Staff", name: "B.Sc. Shivnandini Ravikumar Chinnannvar", role: "", image: "./images/organisers/shivnandini.jpeg", email: "shivnandini.chinnannvar@gei.de", website: "https://www.hcai.ovgu.de/" },
+  { group: "Staff", name: "B.Sc. Yashashwini Sidramappa Awate", role: "", image: "./images/organisers/yashashwini-awate.jpg", email: "yashashwini.awate@st.ovgu.de", website: "https://de.linkedin.com/in/yashashwini-awate-b2abb4227" }
 ];
 
 const topics = ["Responsible AI", "Explainable AI", "Bias & Fairness", "Legal AI", "Personalised Interfaces", "Information Ethics", "Privacy & Safety", "Human-Centred AI"];
@@ -200,17 +219,33 @@ function About() {
           <FadeIn className="about-copy">
             <p className="large-copy">HCAI@OVGU unites experts from academia and industry to explore how intelligent technology can remain transparent, fair, safe, and deeply human.</p>
             <p>Hosted by the Human-Centred Artificial Intelligence Research Group at Otto von Guericke University Magdeburg, the symposium creates space for ideas across computer science, psychology, sociology, law, medicine, and business.</p>
-            <div className="stats">
-              <div><strong>2</strong><span>Days of ideas</span></div>
-              <div><strong>7+</strong><span>Expert voices</span></div>
-              <div><strong>8</strong><span>Focus topics</span></div>
-            </div>
           </FadeIn>
           <FadeIn className="topic-cloud glass" delay={.15}>
             <div className="cloud-orbit"><span>H</span><span>C</span><span>A</span><span>I</span><b>◎</b></div>
             <div className="topic-list">{topics.map((topic, i) => <span key={topic} style={{ "--i": i }}>{topic}</span>)}</div>
           </FadeIn>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function Partners() {
+  const partners = [
+    { name: "HCAI", href: "https://www.hcai.ovgu.de/", kind: "hcai", label: <><strong>HCAI</strong><span>Human-Centred<br />Artificial Intelligence</span></> },
+    { name: "Otto von Guericke University Magdeburg", href: "https://www.ovgu.de/", kind: "ovgu", label: <img src="./images/partners/ovgu-logo.svg" alt="Otto von Guericke University Magdeburg" /> },
+    { name: "Innovation Xperience", href: "https://www.innovationxperience.eu/index.html?lang=en", kind: "innovation", label: <><span>Innovation</span><strong>X</strong><span>perience</span></> },
+    { name: "Investitionsbank Sachsen-Anhalt", href: "https://www.ib-sachsen-anhalt.de/de/", kind: "ib", label: <><strong>IB</strong><span>Investitionsbank<br />Sachsen-Anhalt</span></> }
+  ];
+  return (
+    <section className="partner-band" aria-label="Partners and supporters">
+      <div className="container">
+        <FadeIn className="partner-shell glass">
+          <div className="partner-heading"><span>Hosted and supported by</span><i /></div>
+          <div className="partner-grid">
+            {partners.map(partner => <a className={`partner-logo ${partner.kind}`} href={partner.href} target="_blank" rel="noreferrer" aria-label={partner.name} key={partner.name}>{partner.label}</a>)}
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
@@ -243,12 +278,17 @@ function Schedule() {
       <div className="container">
         <FadeIn className="schedule-page-head">
           <div><span className="kicker">2026 programme</span><h2>Two days.<br /><em>One shared future.</em></h2></div>
-          <p>The complete programme and session details will be announced soon.</p>
+          <p>The programme framework is ready. Speaker names and talk details will be announced as they are confirmed.</p>
         </FadeIn>
         <div className="schedule-days">
           {schedule.map((day, dayIndex) => <FadeIn className="schedule-day glass" key={day.day} delay={dayIndex * .1}>
             <div className="schedule-day-head"><div><small>{day.day} · {day.weekday}</small><h3>{day.date}</h3></div><CalendarDays /></div>
-            <div className="schedule-tba"><span>TBA</span><p>Programme coming soon</p></div>
+            <div className="schedule-list">
+              {day.items.map((item, index) => <div className={`schedule-item ${item.type}`} key={`${day.day}-${index}`}>
+                <time>{item.time}</time>
+                <div><h4>{item.title}</h4>{item.speaker && <p>{item.speaker}</p>}</div>
+              </div>)}
+            </div>
           </FadeIn>)}
         </div>
       </div>
@@ -271,7 +311,7 @@ function Organisers() {
             {organisers.filter(person => person.group === group).map((person, index) =>
               <FadeIn className="organiser-card glass" key={person.name} delay={index * .07}>
                 <div className="organiser-photo"><img src={person.image} alt={person.name} loading="lazy" /></div>
-                <div className="organiser-info"><h3>{person.name}</h3><p>{person.role}</p><div className="organiser-links"><a href={`mailto:${person.email}`}><Mail size={14} />{person.email}</a><a href={person.website} target="_blank" rel="noreferrer"><Globe size={14} />Profile</a></div></div>
+                <div className="organiser-info"><h3>{person.name}</h3>{person.role && <p>{person.role}</p>}<div className="organiser-links"><a href={`mailto:${person.email}`}><Mail size={14} />{person.email}</a><a href={person.website} target="_blank" rel="noreferrer"><Globe size={14} />Profile</a></div></div>
               </FadeIn>
             )}
           </div>
@@ -345,7 +385,7 @@ function App() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
   const page = useRoute();
-  const content = page === "speakers" ? <Speakers /> : page === "schedule" ? <Schedule /> : page === "organisers" ? <Organisers /> : <><Hero /><About /><Venue /><Registration /></>;
+  const content = page === "speakers" ? <Speakers /> : page === "schedule" ? <Schedule /> : page === "organisers" ? <Organisers /> : <><Hero /><About /><Partners /><Venue /><Registration /></>;
   return <>
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <AuroraCanvas /><div className="noise" />
