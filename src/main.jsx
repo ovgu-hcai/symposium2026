@@ -232,10 +232,10 @@ function About() {
 
 function Partners() {
   const partners = [
-    { name: "HCAI", href: "https://www.hcai.ovgu.de/", kind: "hcai", label: <><strong>HCAI</strong><span>Human-Centred<br />Artificial Intelligence</span></> },
-    { name: "Otto von Guericke University Magdeburg", href: "https://www.ovgu.de/", kind: "ovgu", label: <img src="./images/partners/ovgu-logo.svg" alt="Otto von Guericke University Magdeburg" /> },
-    { name: "Innovation Xperience", href: "https://www.innovationxperience.eu/index.html?lang=en", kind: "innovation", label: <><span>Innovation</span><strong>X</strong><span>perience</span></> },
-    { name: "Investitionsbank Sachsen-Anhalt", href: "https://www.ib-sachsen-anhalt.de/de/", kind: "ib", label: <><strong>IB</strong><span>Investitionsbank<br />Sachsen-Anhalt</span></> }
+    { name: "Human-Centred Artificial Intelligence, OVGU", href: "https://www.hcai.ovgu.de/", image: "./images/partners/hcai.png" },
+    { name: "Otto von Guericke University Magdeburg", href: "https://www.ovgu.de/", image: "./images/partners/ovgu.png" },
+    { name: "Experimentelle Fabrik Magdeburg", href: "https://www.exfa.de/", image: "./images/partners/experimentelle-fabrik.png" },
+    { name: "Investitionsbank Sachsen-Anhalt", href: "https://www.ib-sachsen-anhalt.de/de/", image: "./images/partners/investitionsbank.png" }
   ];
   return (
     <section className="partner-band" aria-label="Partners and supporters">
@@ -243,7 +243,7 @@ function Partners() {
         <FadeIn className="partner-shell glass">
           <div className="partner-heading"><span>Hosted and supported by</span><i /></div>
           <div className="partner-grid">
-            {partners.map(partner => <a className={`partner-logo ${partner.kind}`} href={partner.href} target="_blank" rel="noreferrer" aria-label={partner.name} key={partner.name}>{partner.label}</a>)}
+            {partners.map(partner => <a className="partner-logo" href={partner.href} target="_blank" rel="noreferrer" aria-label={partner.name} key={partner.name}><img src={partner.image} alt={partner.name} loading="lazy" /></a>)}
           </div>
         </FadeIn>
       </div>
@@ -385,7 +385,7 @@ function App() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
   const page = useRoute();
-  const content = page === "speakers" ? <Speakers /> : page === "schedule" ? <Schedule /> : page === "organisers" ? <Organisers /> : <><Hero /><About /><Partners /><Venue /><Registration /></>;
+  const content = page === "speakers" ? <Speakers /> : page === "schedule" ? <Schedule /> : page === "organisers" ? <Organisers /> : <><Hero /><About /><Venue /><Registration /><Partners /></>;
   return <>
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <AuroraCanvas /><div className="noise" />
