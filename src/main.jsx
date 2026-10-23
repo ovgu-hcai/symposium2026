@@ -11,7 +11,7 @@ const speakers = Array.from({ length: 6 }, (_, index) => ({ id: index + 1, name:
 
 const schedule = [
   {
-    day: "Day 01", date: "30 November 2026", weekday: "Monday",
+    day: "Day 01", date: "7 December 2026", weekday: "Monday",
     items: [
       { time: "13:00 – 14:00", type: "session", title: "Welcome", speaker: "Speaker TBA" },
       { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
@@ -22,7 +22,7 @@ const schedule = [
     ]
   },
   {
-    day: "Day 02", date: "1 December 2026", weekday: "Tuesday",
+    day: "Day 02", date: "8 December 2026", weekday: "Tuesday",
     items: [
       { time: "08:00 – 09:00", type: "break", title: "Welcome Coffee" },
       { time: "09:00 – 10:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
@@ -196,7 +196,7 @@ function Hero() {
         </motion.div>
 
         <motion.div className="event-strip glass hero-event-strip" initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: .75, duration: .8 }}>
-          <div><CalendarDays /><span><small>Save the date</small>30 Nov—1 Dec 2026</span></div>
+          <div><CalendarDays /><span><small>Save the date</small>7—8 Dec 2026</span></div>
           <i />
           <div><MapPin /><span><small>Meet us in</small>Magdeburg, Germany</span></div>
           <a className="hero-register" href="https://forms.gle/2ajqTr4CAzZLPVUR9" target="_blank" rel="noopener noreferrer">Register <ArrowRight size={15} /></a>
@@ -251,6 +251,28 @@ function Partners() {
   );
 }
 
+function Impressions() {
+  const moments = [
+    { number: "01", title: "Conversations", copy: "Ideas shared across disciplines, institutions, and perspectives." },
+    { number: "02", title: "Connections", copy: "A meeting place for researchers, practitioners, and emerging voices." },
+    { number: "03", title: "Ideas in motion", copy: "Human-centred AI explored through dialogue, reflection, and practice." }
+  ];
+  return (
+    <section className="impressions-section" aria-labelledby="impressions-title">
+      <div className="container">
+        <FadeIn className="impressions-head">
+          <div><span className="kicker">Impressions</span><h2 id="impressions-title">Moments worth<br /><em>remembering.</em></h2></div>
+          <p>Photo highlights from HCAI Symposium 2026 will be shared here after the event.</p>
+        </FadeIn>
+        <div className="impressions-grid">
+          {moments.map((moment, index) => <FadeIn className="impression-card glass" delay={index * .08} key={moment.number}>
+            <span>{moment.number}</span><div className="impression-glow" /><div><h3>{moment.title}</h3><p>{moment.copy}</p></div>
+          </FadeIn>)}
+        </div>
+      </div>
+    </section>
+  );
+}
 function Speakers() {
   return (
     <section className="section inner-page-section speakers-section">
@@ -385,7 +407,7 @@ function App() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
   const page = useRoute();
-  const content = page === "speakers" ? <Speakers /> : page === "schedule" ? <Schedule /> : page === "organisers" ? <Organisers /> : <><Hero /><About /><Venue /><Registration /><Partners /></>;
+  const content = page === "speakers" ? <Speakers /> : page === "schedule" ? <Schedule /> : page === "organisers" ? <Organisers /> : <><Hero /><About /><Venue /><Registration /><Partners /><Impressions /></>;
   return <>
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <AuroraCanvas /><div className="noise" />
