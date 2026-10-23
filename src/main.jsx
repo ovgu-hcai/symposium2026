@@ -251,28 +251,36 @@ function Partners() {
   );
 }
 
-function Impressions() {
-  const moments = [
-    { number: "01", title: "Conversations", copy: "Ideas shared across disciplines, institutions, and perspectives." },
-    { number: "02", title: "Connections", copy: "A meeting place for researchers, practitioners, and emerging voices." },
-    { number: "03", title: "Ideas in motion", copy: "Human-centred AI explored through dialogue, reflection, and practice." }
-  ];
+function Impressum() {
   return (
-    <section className="impressions-section" aria-labelledby="impressions-title">
-      <div className="container">
-        <FadeIn className="impressions-head">
-          <div><span className="kicker">Impressions</span><h2 id="impressions-title">Moments worth<br /><em>remembering.</em></h2></div>
-          <p>Photo highlights from HCAI Symposium 2026 will be shared here after the event.</p>
+    <section className="section inner-page-section legal-section">
+      <div className="container legal-container">
+        <FadeIn className="section-intro">
+          <span className="kicker">Legal notice</span>
+          <h2>Impressum</h2>
         </FadeIn>
-        <div className="impressions-grid">
-          {moments.map((moment, index) => <FadeIn className="impression-card glass" delay={index * .08} key={moment.number}>
-            <span>{moment.number}</span><div className="impression-glow" /><div><h3>{moment.title}</h3><p>{moment.copy}</p></div>
-          </FadeIn>)}
-        </div>
+        <FadeIn className="legal-card glass" delay={.08}>
+          <h3>Angaben gemäß § 5 DDG und § 18 MStV</h3>
+          <p><strong>Otto-von-Guericke-Universität Magdeburg</strong><br />Körperschaft des öffentlichen Rechts<br />Universitätsplatz 2<br />39106 Magdeburg<br />Deutschland</p>
+          <h3>Vertretungsberechtigt</h3>
+          <p>Die Otto-von-Guericke-Universität Magdeburg wird vertreten durch den Rektor:<br /><strong>Prof. Dr.-Ing. Jens Strackeljan</strong></p>
+          <h3>Kontakt</h3>
+          <p>Telefon: <a href="tel:+493916701">+49 391 67-01</a><br />E-Mail: <a href="mailto:rektor@ovgu.de">rektor@ovgu.de</a><br />Internet: <a href="https://www.ovgu.de/" target="_blank" rel="noreferrer">www.ovgu.de</a></p>
+          <h3>Redaktionell verantwortlich</h3>
+          <p><strong>M.Sc. Het Darshan Mehta</strong><br />Human-Centred Artificial Intelligence Research Group<br />Otto-von-Guericke-Universität Magdeburg<br />Universitätsplatz 2<br />39106 Magdeburg<br />E-Mail: <a href="mailto:het.mehta@ovgu.de">het.mehta@ovgu.de</a></p>
+          <h3>Zuständige Aufsichtsbehörde</h3>
+          <p>Ministerium für Wissenschaft, Energie, Klimaschutz und Umwelt des Landes Sachsen-Anhalt<br />Leipziger Straße 58<br />39112 Magdeburg<br />E-Mail: <a href="mailto:poststelle@mwu.sachsen-anhalt.de">poststelle@mwu.sachsen-anhalt.de</a></p>
+          <h3>Umsatzsteuer-Identifikationsnummer</h3>
+          <p>DE 139 238 413</p>
+          <h3>Haftung für externe Links</h3>
+          <p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte die Otto-von-Guericke-Universität Magdeburg keinen Einfluss hat. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.</p>
+          <p className="legal-source">Weitere rechtliche Informationen finden Sie im <a href="https://www.ovgu.de/Impressum.html" target="_blank" rel="noreferrer">zentralen Impressum der OVGU</a>.</p>
+        </FadeIn>
       </div>
     </section>
   );
 }
+
 function Speakers() {
   return (
     <section className="section inner-page-section speakers-section">
@@ -385,7 +393,7 @@ function Footer() {
     <footer>
       <div className="container footer-top">
         <div><a className="brand footer-brand" href="#/"><span className="brand-mark"><i /><i /><i /></span><span>HCAI <b>2026</b></span></a><p>Human-Centred Artificial Intelligence<br />Research Group · OVGU Magdeburg</p></div>
-        <div className="footer-links"><div><small>Explore</small><a href="#/">Home</a><a href="#/speakers">Speakers</a><a href="#/schedule">Schedule</a><a href="#/organisers">Organisers</a></div><div><small>Need help?</small><a href="mailto:het.mehta@ovgu.de">Het Darshan Mehta</a><a href="mailto:het.mehta@ovgu.de">het.mehta@ovgu.de</a></div></div>
+        <div className="footer-links"><div><small>Explore</small><a href="#/">Home</a><a href="#/speakers">Speakers</a><a href="#/schedule">Schedule</a><a href="#/organisers">Organisers</a><a href="#/impressum">Impressum</a></div><div><small>Need help?</small><a href="mailto:het.mehta@ovgu.de">Het Darshan Mehta</a><a href="mailto:het.mehta@ovgu.de">het.mehta@ovgu.de</a></div></div>
       </div>
       <div className="container footer-bottom"><span>© 2026 HCAI Research Group, Otto von Guericke University Magdeburg.</span><div><a href="#" aria-label="Twitter"><Twitter size={17} /></a><a href="#" aria-label="LinkedIn"><Linkedin size={17} /></a></div></div>
     </footer>
@@ -407,7 +415,7 @@ function App() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
   const page = useRoute();
-  const content = page === "speakers" ? <Speakers /> : page === "schedule" ? <Schedule /> : page === "organisers" ? <Organisers /> : <><Hero /><About /><Venue /><Registration /><Partners /><Impressions /></>;
+  const content = page === "speakers" ? <Speakers /> : page === "schedule" ? <Schedule /> : page === "organisers" ? <Organisers /> : page === "impressum" ? <Impressum /> : <><Hero /><About /><Venue /><Registration /><Partners /></>;
   return <>
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <AuroraCanvas /><div className="noise" />
