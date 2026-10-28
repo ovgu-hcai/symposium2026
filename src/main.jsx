@@ -7,7 +7,19 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
-const speakers = Array.from({ length: 6 }, (_, index) => ({ id: index + 1, name: "To be announced", role: "Speaker details coming soon", talk: "Talk title to be announced" }));
+const speakers = [
+  {
+    id: 1,
+    name: "Prof. Dr. rer. nat. Christoph Hoeschen",
+    role: "Head of the Chair of Medical Systems Technology · OVGU",
+    talk: "Talk title to be announced",
+    date: "8 December 2026 · Time TBA",
+    image: "./images/speakers/christoph-hoeschen.jpg",
+    profile: "https://www.lms.ovgu.de/lms/en/Group+Members/Head+of+the+group/Prof_+Dr_+rer_+nat_+Christoph+Hoeschen-p-40.html",
+    bio: "Christoph Hoeschen is Professor of Medical Systems Technology at Otto von Guericke University Magdeburg. His research spans medical imaging, radiation protection, diagnostic technologies, and intelligent methods for improving healthcare systems."
+  },
+  ...Array.from({ length: 5 }, (_, index) => ({ id: index + 2, name: "To be announced", role: "Speaker details coming soon", talk: "Talk title to be announced" }))
+];
 
 const schedule = [
   {
@@ -286,14 +298,20 @@ function Speakers() {
     <section className="section inner-page-section speakers-section">
       <div className="container">
         <FadeIn className="section-intro row">
-          <div><span className="kicker">2026 speakers</span><h2>New voices.<br /><em>Coming soon.</em></h2></div>
-          <p>The 2026 keynote and invited speaker line-up is being curated. Confirmed speakers will be announced here.</p>
+          <div><span className="kicker">2026 speakers</span><h2>Meet the voices<br /><em>shaping the conversation.</em></h2></div>
+          <p>Meet the confirmed speakers joining HCAI Symposium 2026. Additional voices and talk details will be announced soon.</p>
         </FadeIn>
         <div className="speaker-grid">
           {speakers.map((speaker, i) => (
-            <FadeIn key={speaker.id} className="speaker-card tba-card glass" delay={(i % 3) * .06}>
-              <div className="speaker-avatar tba-avatar"><UserRound size={48} /><div className="avatar-shine" /></div>
-              <div className="speaker-info"><span className="speaker-number">0{i + 1}</span><h3>{speaker.name}</h3><p>{speaker.role}</p><div className="talk-title">{speaker.talk}</div></div>
+            <FadeIn key={speaker.id} className={`speaker-card glass ${speaker.image ? "confirmed-speaker" : "tba-card"}`} delay={(i % 3) * .06}>
+              <div className={`speaker-avatar ${speaker.image ? "speaker-photo" : "tba-avatar"}`}>{speaker.image ? <img src={speaker.image} alt={speaker.name} loading="lazy" /> : <UserRound size={48} />}<div className="avatar-shine" /></div>
+              <div className="speaker-info">
+                <span className="speaker-number">0{i + 1}</span><h3>{speaker.name}</h3><p>{speaker.role}</p>
+                {speaker.date && <div className="speaker-date"><CalendarDays size={13} />{speaker.date}</div>}
+                {speaker.bio && <p className="speaker-bio">{speaker.bio}</p>}
+                <div className="talk-title">{speaker.talk}</div>
+                {speaker.profile && <a className="speaker-profile" href={speaker.profile} target="_blank" rel="noreferrer">Official profile <ExternalLink size={13} /></a>}
+              </div>
             </FadeIn>
           ))}
         </div>
