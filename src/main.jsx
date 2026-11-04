@@ -15,6 +15,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "Date and time TBA",
     confirmed: true,
+    image: "./images/speakers/christian-hansen.jpg",
     profile: "https://www.var.ovgu.de/lab_member/prof-dr-christian-hansen/",
     bio: "Christian Hansen researches virtual and augmented reality, human–machine interaction, medical visualization, and immersive systems for clinical environments."
   },
@@ -25,6 +26,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "Date and time TBA",
     confirmed: true,
+    image: "./images/speakers/danny-schott.webp",
     profile: "https://www.var.ovgu.de/lab_member/dr-danny-schott/",
     bio: "Danny Schott is an interdisciplinary researcher working at the intersection of interaction design, mixed reality, intelligent systems, and human–computer interaction."
   },
@@ -46,6 +48,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "7 December 2026 · Time TBA",
     confirmed: true,
+    image: "./images/speakers/fabio-cavaliere.jpg",
     profile: "https://research.science.eus/investigadores/190893/detalle?lang=en",
     bio: "Fabio Cavaliere researches brain pathologies and neurodegeneration, including Parkinson’s disease, cerebral ischemia, astrocyte biology, and human brain models."
   },
@@ -56,6 +59,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "7 December 2026 · 16:00",
     confirmed: true,
+    image: "./images/speakers/peter-mertens.jpg",
     profile: "https://www.ovgu.de/Mertens.html",
     bio: "Peter Mertens is a physician and researcher in nephrology and hypertension whose work includes kidney disease, digital medicine, telemedicine, mobile health, and artificial intelligence."
   },
@@ -66,6 +70,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "Date and time TBA",
     confirmed: true,
+    image: "./images/speakers/lars-dornheim.webp",
     profile: "https://www.dornheim.tech/en/about.html",
     bio: "Lars Dornheim is a computer scientist and entrepreneur working on medical image analysis, artificial intelligence, 3D visualization, and medical software."
   },
@@ -76,6 +81,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "8 December 2026 · Time TBA",
     confirmed: true,
+    image: "./images/speakers/luca-simeoni.png",
     profile: "https://forschung-sachsen-anhalt.de/pl/simeoni-82434",
     bio: "Luca Simeoni researches the molecular mechanisms governing immune-cell signalling and activation, with a particular focus on T-cell biology and immune regulation."
   },
@@ -373,7 +379,7 @@ function Speakers() {
         </FadeIn>
         <div className="speaker-grid">
           {speakers.map((speaker, i) => (
-            <FadeIn key={speaker.id} className={`speaker-card glass ${speaker.image ? "confirmed-speaker" : speaker.confirmed ? "confirmed-card" : "tba-card"}`} delay={(i % 3) * .06}>
+            <FadeIn key={speaker.id} className={`speaker-card glass ${speaker.confirmed ? "confirmed-card" : "tba-card"} ${speaker.image ? "has-photo" : "no-photo"}`} delay={(i % 2) * .06}>
               <div className={`speaker-avatar ${speaker.image ? "speaker-photo" : "tba-avatar"}`}>{speaker.image ? <img src={speaker.image} alt={speaker.name} loading="lazy" /> : <UserRound size={48} />}<div className="avatar-shine" /></div>
               <div className="speaker-info">
                 <span className="speaker-number">0{i + 1}</span><h3>{speaker.name}</h3><p>{speaker.role}</p>
