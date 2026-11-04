@@ -20,7 +20,7 @@
     {
       "id": "christian-hansen",
       "name": "Prof. Dr. Christian Hansen",
-      "status": "invited",
+      "status": "confirmed",
       "verificationStatus": "verified",
       "location": "Magdeburg, Germany",
       "affiliation": "Otto von Guericke University Magdeburg",
@@ -28,13 +28,35 @@
       "bioNotes": "Research focuses on virtual and augmented reality, human-machine interaction, medical visualization, computer-assisted surgery, and immersive systems for clinical environments.",
       "profileUrl": "https://www.var.ovgu.de/lab_member/prof-dr-christian-hansen/",
       "portraitUrl": null,
-      "proposedSchedule": null,
+      "proposedSchedule": {
+        "date": null,
+        "time": null,
+        "note": "Confirmed speaker; date and time TBA."
+      },
+      "researchNote": null
+    },
+    {
+      "id": "danny-schott",
+      "name": "Dr. Danny Schott",
+      "status": "confirmed",
+      "verificationStatus": "verified",
+      "location": "Magdeburg, Germany",
+      "affiliation": "Otto von Guericke University Magdeburg",
+      "role": "Senior Researcher, Virtual and Augmented Reality Group",
+      "bioNotes": "Interdisciplinary researcher working at the intersection of interaction design, mixed reality, intelligent systems, and human-computer interaction.",
+      "profileUrl": "https://www.var.ovgu.de/lab_member/dr-danny-schott/",
+      "portraitUrl": null,
+      "proposedSchedule": {
+        "date": null,
+        "time": null,
+        "note": "Confirmed speaker; date and time TBA."
+      },
       "researchNote": null
     },
     {
       "id": "peter-mertens",
       "name": "Prof. Dr. med. Peter Mertens",
-      "status": "invited",
+      "status": "confirmed",
       "verificationStatus": "verified",
       "location": "Magdeburg, Germany",
       "affiliation": "Otto von Guericke University Magdeburg / University Hospital Magdeburg",
@@ -45,7 +67,7 @@
       "proposedSchedule": {
         "date": "2026-12-07",
         "time": "16:00",
-        "note": "Provided by organizer; do not publish until acceptance is confirmed."
+        "note": "Confirmed speaker."
       },
       "researchNote": null
     },
@@ -66,8 +88,8 @@
     {
       "id": "lars-dornheim",
       "name": "Lars Dornheim",
-      "status": "invited",
-      "verificationStatus": "needs-organizer-confirmation",
+      "status": "confirmed",
+      "verificationStatus": "verified",
       "location": "Barleben / Magdeburg, Germany",
       "affiliation": "Dornheim Medical Images GmbH",
       "role": "Founder; Software, Science & Technical Vision",
@@ -75,7 +97,7 @@
       "profileUrl": "https://www.dornheim.tech/en/about.html",
       "portraitUrl": null,
       "proposedSchedule": null,
-      "researchNote": "The invitation list only says 'Dornheim'. Lars Dornheim is the likely person, but the organizer must confirm the identity before publication."
+      "researchNote": "Organizer confirmed that the invited Dornheim is Lars Dornheim; date and time remain TBA."
     },
     {
       "id": "christoph-hoeschen",
@@ -98,7 +120,7 @@
     {
       "id": "georg-rose",
       "name": "Prof. Dr. rer. nat. Georg Rose",
-      "status": "invited",
+      "status": "declined",
       "verificationStatus": "verified",
       "location": "Magdeburg, Germany",
       "affiliation": "Otto von Guericke University Magdeburg",
@@ -124,9 +146,27 @@
       "researchNote": null
     },
     {
+      "id": "michael-bosnjak",
+      "name": "Prof. Dr. Michael Bosnjak",
+      "status": "confirmed",
+      "verificationStatus": "verified",
+      "location": "Trier, Germany",
+      "affiliation": "Trier University",
+      "role": "Head, Department of Psychological Research Methods",
+      "bioNotes": "Research focuses on psychological methodology, survey research, research synthesis, AI-supported inference, open science, and consumer psychology.",
+      "profileUrl": "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-i/faecher-und-institute/psychologie/professuren/abt-psych-methodenlehre/team/prof-dr-michael-bosnjak",
+      "portraitUrl": null,
+      "proposedSchedule": {
+        "date": "2026-12-07",
+        "time": null,
+        "note": "Confirmed speaker; time TBA."
+      },
+      "researchNote": null
+    },
+    {
       "id": "luca-simeoni",
       "name": "Prof. Dr. Luca Simeoni",
-      "status": "invited",
+      "status": "confirmed",
       "verificationStatus": "verified",
       "location": "Magdeburg, Germany",
       "affiliation": "Otto von Guericke University Magdeburg, Institute of Clinical Immunology and Cell Therapeutics",
@@ -134,22 +174,30 @@
       "bioNotes": "Immunology researcher focused on molecular mechanisms of immune-cell signaling and activation, particularly T-cell biology and immune regulation.",
       "profileUrl": "https://forschung-sachsen-anhalt.de/pl/simeoni-82434",
       "portraitUrl": null,
-      "proposedSchedule": null,
+      "proposedSchedule": {
+        "date": "2026-12-08",
+        "time": null,
+        "note": "Confirmed speaker; time TBA."
+      },
       "researchNote": null
     },
     {
       "id": "fabio-cavaliere",
-      "name": "Prof. Fabio Cavaliere",
-      "status": "invited",
-      "verificationStatus": "needs-organizer-confirmation",
+      "name": "Dr. Fabio Cavaliere",
+      "status": "confirmed",
+      "verificationStatus": "verified",
       "location": "Leioa, Spain",
       "affiliation": "Achucarro Basque Center for Neuroscience",
       "role": "Senior Researcher, Laboratory of Human Biomodels in Brain Pathologies",
       "bioNotes": "Neuroscience researcher studying brain pathology and neurodegeneration, including Parkinson's disease, cerebral ischemia, astrocyte biology, and human brain models.",
       "profileUrl": "https://research.science.eus/investigadores/190893/detalle?lang=en",
       "portraitUrl": null,
-      "proposedSchedule": null,
-      "researchNote": "There is also a Prof. Fabio Cavaliere in theoretical condensed-matter physics at the University of Genoa. The organizer must confirm which person was invited before publication."
+      "proposedSchedule": {
+        "date": "2026-12-07",
+        "time": null,
+        "note": "Confirmed speaker; time TBA."
+      },
+      "researchNote": "Organizer confirmed that this is the neuroscientist Fabio Cavaliere, formerly connected with Magdeburg research institutions."
     }
   ]
 }

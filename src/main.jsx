@@ -10,15 +10,85 @@ import "./styles.css";
 const speakers = [
   {
     id: 1,
+    name: "Prof. Dr. Christian Hansen",
+    role: "Professor and Director, Virtual and Augmented Reality Group · OVGU",
+    talk: "Talk title TBA",
+    date: "Date and time TBA",
+    confirmed: true,
+    profile: "https://www.var.ovgu.de/lab_member/prof-dr-christian-hansen/",
+    bio: "Christian Hansen researches virtual and augmented reality, human–machine interaction, medical visualization, and immersive systems for clinical environments."
+  },
+  {
+    id: 2,
+    name: "Dr. Danny Schott",
+    role: "Senior Researcher, Virtual and Augmented Reality Group · OVGU",
+    talk: "Talk title TBA",
+    date: "Date and time TBA",
+    confirmed: true,
+    profile: "https://www.var.ovgu.de/lab_member/dr-danny-schott/",
+    bio: "Danny Schott is an interdisciplinary researcher working at the intersection of interaction design, mixed reality, intelligent systems, and human–computer interaction."
+  },
+  {
+    id: 3,
     name: "Prof. Dr. rer. nat. Christoph Hoeschen",
     role: "Head of the Chair of Medical Systems Technology · OVGU",
     talk: "Talk title to be announced",
     date: "8 December 2026 · Time TBA",
+    confirmed: true,
     image: "./images/speakers/christoph-hoeschen.jpg",
     profile: "https://www.lms.ovgu.de/lms/en/Group+Members/Head+of+the+group/Prof_+Dr_+rer_+nat_+Christoph+Hoeschen-p-40.html",
     bio: "Christoph Hoeschen is Professor of Medical Systems Technology at Otto von Guericke University Magdeburg. His research spans medical imaging, radiation protection, diagnostic technologies, and intelligent methods for improving healthcare systems."
   },
-  ...Array.from({ length: 5 }, (_, index) => ({ id: index + 2, name: "To be announced", role: "Speaker details coming soon", talk: "Talk title to be announced" }))
+  {
+    id: 4,
+    name: "Dr. Fabio Cavaliere",
+    role: "Senior Researcher · Achucarro Basque Center for Neuroscience",
+    talk: "Talk title TBA",
+    date: "7 December 2026 · Time TBA",
+    confirmed: true,
+    profile: "https://research.science.eus/investigadores/190893/detalle?lang=en",
+    bio: "Fabio Cavaliere researches brain pathologies and neurodegeneration, including Parkinson’s disease, cerebral ischemia, astrocyte biology, and human brain models."
+  },
+  {
+    id: 5,
+    name: "Prof. Dr. med. Peter Mertens",
+    role: "Director, University Clinic for Kidney and Hypertension Diseases · University Hospital Magdeburg",
+    talk: "Talk title TBA",
+    date: "7 December 2026 · 16:00",
+    confirmed: true,
+    profile: "https://www.ovgu.de/Mertens.html",
+    bio: "Peter Mertens is a physician and researcher in nephrology and hypertension whose work includes kidney disease, digital medicine, telemedicine, mobile health, and artificial intelligence."
+  },
+  {
+    id: 6,
+    name: "Dipl.-Inf. Lars Dornheim",
+    role: "Founder · Dornheim Medical Images GmbH",
+    talk: "Talk title TBA",
+    date: "Date and time TBA",
+    confirmed: true,
+    profile: "https://www.dornheim.tech/en/about.html",
+    bio: "Lars Dornheim is a computer scientist and entrepreneur working on medical image analysis, artificial intelligence, 3D visualization, and medical software."
+  },
+  {
+    id: 7,
+    name: "Prof. Dr. Luca Simeoni",
+    role: "Research Group Leader, Institute of Molecular and Clinical Immunology · OVGU",
+    talk: "Talk title TBA",
+    date: "8 December 2026 · Time TBA",
+    confirmed: true,
+    profile: "https://forschung-sachsen-anhalt.de/pl/simeoni-82434",
+    bio: "Luca Simeoni researches the molecular mechanisms governing immune-cell signalling and activation, with a particular focus on T-cell biology and immune regulation."
+  },
+  {
+    id: 8,
+    name: "Prof. Dr. Michael Bosnjak",
+    role: "Head, Psychological Research Methods · Trier University",
+    talk: "Talk title TBA",
+    date: "7 December 2026 · Time TBA",
+    confirmed: true,
+    profile: "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-i/faecher-und-institute/psychologie/professuren/abt-psych-methodenlehre/team/prof-dr-michael-bosnjak",
+    bio: "Michael Bosnjak researches psychological methodology, survey research, research synthesis, AI-supported inference, open science, and consumer psychology."
+  }
 ];
 
 const schedule = [
@@ -26,10 +96,10 @@ const schedule = [
     day: "Day 01", date: "7 December 2026", weekday: "Monday",
     items: [
       { time: "13:00 – 14:00", type: "session", title: "Welcome", speaker: "Speaker TBA" },
-      { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "TBA", type: "talk", title: "Talk title TBA", speaker: "Dr. Fabio Cavaliere" },
+      { time: "TBA", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. Michael Bosnjak" },
       { time: "15:00 – 15:30", type: "break", title: "Coffee Break" },
-      { time: "15:30 – 16:30", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
-      { time: "16:30 – 17:30", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "16:00", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. med. Peter Mertens" },
       { time: "18:30", type: "special", title: "Meet and Greet", speaker: "Innovation Xperience Incubator" }
     ]
   },
@@ -37,8 +107,8 @@ const schedule = [
     day: "Day 02", date: "8 December 2026", weekday: "Tuesday",
     items: [
       { time: "08:00 – 09:00", type: "break", title: "Welcome Coffee" },
-      { time: "09:00 – 10:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
-      { time: "10:00 – 11:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "TBA", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. rer. nat. Christoph Hoeschen" },
+      { time: "TBA", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. Luca Simeoni" },
       { time: "11:00 – 13:00", type: "break", title: "Lunch Break" },
       { time: "13:00 – 14:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
       { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
@@ -303,7 +373,7 @@ function Speakers() {
         </FadeIn>
         <div className="speaker-grid">
           {speakers.map((speaker, i) => (
-            <FadeIn key={speaker.id} className={`speaker-card glass ${speaker.image ? "confirmed-speaker" : "tba-card"}`} delay={(i % 3) * .06}>
+            <FadeIn key={speaker.id} className={`speaker-card glass ${speaker.image ? "confirmed-speaker" : speaker.confirmed ? "confirmed-card" : "tba-card"}`} delay={(i % 3) * .06}>
               <div className={`speaker-avatar ${speaker.image ? "speaker-photo" : "tba-avatar"}`}>{speaker.image ? <img src={speaker.image} alt={speaker.name} loading="lazy" /> : <UserRound size={48} />}<div className="avatar-shine" /></div>
               <div className="speaker-info">
                 <span className="speaker-number">0{i + 1}</span><h3>{speaker.name}</h3><p>{speaker.role}</p>
