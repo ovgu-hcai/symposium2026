@@ -34,12 +34,12 @@ const speakers = [
     id: 3,
     name: "Prof. Dr. rer. nat. Christoph Hoeschen",
     role: "Head of the Chair of Medical Systems Technology · OVGU",
-    talk: "Talk title to be announced",
+    talk: "Talk title TBA",
     date: "8 December 2026 · Time TBA",
     confirmed: true,
     image: "./images/speakers/christoph-hoeschen.jpg",
     profile: "https://www.lms.ovgu.de/lms/en/Group+Members/Head+of+the+group/Prof_+Dr_+rer_+nat_+Christoph+Hoeschen-p-40.html",
-    bio: "Christoph Hoeschen is Professor of Medical Systems Technology at Otto von Guericke University Magdeburg. His research spans medical imaging, radiation protection, diagnostic technologies, and intelligent methods for improving healthcare systems."
+    bio: "Christoph Hoeschen researches medical imaging, radiation protection, diagnostic technologies, and intelligent methods for safer, more effective healthcare systems."
   },
   {
     id: 4,
