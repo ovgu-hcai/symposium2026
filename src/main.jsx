@@ -92,6 +92,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "7 December 2026 · Time TBA",
     confirmed: true,
+    image: "./images/speakers/michael-bosnjak.png",
     profile: "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-i/faecher-und-institute/psychologie/professuren/abt-psych-methodenlehre/team/prof-dr-michael-bosnjak",
     bio: "Michael Bosnjak researches psychological methodology, survey research, research synthesis, AI-supported inference, open science, and consumer psychology."
   }
