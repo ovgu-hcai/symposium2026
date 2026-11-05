@@ -17,7 +17,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/christian-hansen.jpg",
     profile: "https://www.var.ovgu.de/lab_member/prof-dr-christian-hansen/",
-    bio: "Christian Hansen researches virtual and augmented reality, human–machine interaction, medical visualization, and immersive systems for clinical environments."
+    bio: "Christian Hansen is Professor and Director of the Virtual and Augmented Reality Group at OVGU. His research combines virtual and augmented reality, human–machine interaction, medical visualization, and computer-assisted surgery. He develops immersive, interaction-driven systems designed to support clinical training, planning, and interventions."
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/danny-schott.webp",
     profile: "https://www.var.ovgu.de/lab_member/dr-danny-schott/",
-    bio: "Danny Schott is an interdisciplinary researcher working at the intersection of interaction design, mixed reality, intelligent systems, and human–computer interaction."
+    bio: "Danny Schott is a Senior Researcher in the Virtual and Augmented Reality Group at OVGU. His interdisciplinary work brings together interaction design, mixed reality, intelligent systems, and human–computer interaction. He develops spatial and experiential technologies that make complex medical and scientific information easier to understand."
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/christoph-hoeschen.jpg",
     profile: "https://www.lms.ovgu.de/lms/en/Group+Members/Head+of+the+group/Prof_+Dr_+rer_+nat_+Christoph+Hoeschen-p-40.html",
-    bio: "Christoph Hoeschen researches medical imaging, radiation protection, diagnostic technologies, and intelligent methods for safer, more effective healthcare systems."
+    bio: "Christoph Hoeschen leads the Chair of Medical Systems Technology at OVGU. His research spans medical imaging, radiation protection, diagnostic technologies, and intelligent healthcare systems. A central focus of his work is improving diagnostic information and clinical processes while supporting safer, more effective patient care."
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/fabio-cavaliere.jpg",
     profile: "https://research.science.eus/investigadores/190893/detalle?lang=en",
-    bio: "Fabio Cavaliere researches brain pathologies and neurodegeneration, including Parkinson’s disease, cerebral ischemia, astrocyte biology, and human brain models."
+    bio: "Fabio Cavaliere is a neuroscientist at the Achucarro Basque Center for Neuroscience. His research investigates brain pathologies and neurodegeneration, including Parkinson’s disease, cerebral ischemia, and astrocyte biology. He also works with human biomodels and brain organoids to study disease mechanisms and therapeutic possibilities."
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/peter-mertens.jpg",
     profile: "https://www.ovgu.de/Mertens.html",
-    bio: "Peter Mertens is a physician and researcher in nephrology and hypertension whose work includes kidney disease, digital medicine, telemedicine, mobile health, and artificial intelligence."
+    bio: "Peter Mertens directs the University Clinic for Kidney and Hypertension Diseases at University Hospital Magdeburg. His clinical and scientific work covers nephrology, hypertension, and complex kidney disease. His wider research interests include digital medicine, telemedicine, mobile health, and artificial-intelligence-supported healthcare."
   },
   {
     id: 6,
@@ -72,7 +72,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/lars-dornheim.webp",
     profile: "https://www.dornheim.tech/en/about.html",
-    bio: "Lars Dornheim is a computer scientist and entrepreneur working on medical image analysis, artificial intelligence, 3D visualization, and medical software."
+    bio: "Lars Dornheim is a computer scientist, entrepreneur, and founder of Dornheim Medical Images. His work combines medical image analysis, artificial intelligence, mathematical modelling, and interactive 3D visualization. He focuses on translating scientific methods into intuitive software tools for medicine, research, and clinical decision support."
   },
   {
     id: 7,
@@ -83,7 +83,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/luca-simeoni.png",
     profile: "https://forschung-sachsen-anhalt.de/pl/simeoni-82434",
-    bio: "Luca Simeoni researches the molecular mechanisms governing immune-cell signalling and activation, with a particular focus on T-cell biology and immune regulation."
+    bio: "Luca Simeoni leads a research group at OVGU’s Institute of Clinical Immunology and Cell Therapeutics. He investigates the molecular mechanisms that govern immune-cell signalling and activation, particularly in T cells. His work also explores therapeutic immune-cell engineering and strategies for modulating immune responses."
   },
   {
     id: 8,
@@ -94,7 +94,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/michael-bosnjak.png",
     profile: "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-i/faecher-und-institute/psychologie/professuren/abt-psych-methodenlehre/team/prof-dr-michael-bosnjak",
-    bio: "Michael Bosnjak researches psychological methodology, survey research, research synthesis, AI-supported inference, open science, and consumer psychology."
+    bio: "Michael Bosnjak heads the Department of Psychological Research Methods at Trier University. His research covers survey methodology, research synthesis, open science, consumer psychology, and AI-supported inference methods. He develops rigorous approaches for collecting, evaluating, and interpreting evidence in psychological and social research."
   }
 ];
 
