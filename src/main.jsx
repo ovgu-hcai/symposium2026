@@ -48,7 +48,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "7 December 2026 · Time TBA",
     confirmed: true,
-    image: "./images/speakers/fabio-cavaliere.jpg",
+    image: "./images/speakers/fabio-cavaliere-refined.jpg",
     profile: "https://research.science.eus/investigadores/190893/detalle?lang=en",
     bio: "Fabio Cavaliere is a neuroscientist at the Achucarro Basque Center for Neuroscience. His research investigates brain pathologies and neurodegeneration, including Parkinson’s disease, cerebral ischemia, and astrocyte biology. He also works with human biomodels and brain organoids to study disease mechanisms and therapeutic possibilities."
   },
@@ -59,7 +59,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "7 December 2026 · 16:00",
     confirmed: true,
-    image: "./images/speakers/peter-mertens.jpg",
+    image: "./images/speakers/peter-mertens-refined.jpg",
     profile: "https://www.ovgu.de/Mertens.html",
     bio: "Peter Mertens directs the University Clinic for Kidney and Hypertension Diseases at University Hospital Magdeburg. His clinical and scientific work covers nephrology, hypertension, and complex kidney disease. His wider research interests include digital medicine, telemedicine, mobile health, and artificial-intelligence-supported healthcare."
   },
@@ -81,7 +81,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "8 December 2026 · Time TBA",
     confirmed: true,
-    image: "./images/speakers/luca-simeoni.png",
+    image: "./images/speakers/luca-simeoni-refined.jpg",
     profile: "https://forschung-sachsen-anhalt.de/pl/simeoni-82434",
     bio: "Luca Simeoni leads a research group at OVGU’s Institute of Clinical Immunology and Cell Therapeutics. He investigates the molecular mechanisms that govern immune-cell signalling and activation, particularly in T cells. His work also explores therapeutic immune-cell engineering and strategies for modulating immune responses."
   },
@@ -92,7 +92,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "7 December 2026 · Time TBA",
     confirmed: true,
-    image: "./images/speakers/michael-bosnjak.png",
+    image: "./images/speakers/michael-bosnjak-refined.jpg",
     profile: "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-i/faecher-und-institute/psychologie/professuren/abt-psych-methodenlehre/team/prof-dr-michael-bosnjak",
     bio: "Michael Bosnjak heads the Department of Psychological Research Methods at Trier University. His research covers survey methodology, research synthesis, open science, consumer psychology, and AI-supported inference methods. He develops rigorous approaches for collecting, evaluating, and interpreting evidence in psychological and social research."
   }
