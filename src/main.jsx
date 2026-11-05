@@ -15,7 +15,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "Date and time TBA",
     confirmed: true,
-    image: "./images/speakers/christian-hansen.jpg",
+    image: "./images/speakers/christian-hansen-refined.jpg",
     profile: "https://www.var.ovgu.de/lab_member/prof-dr-christian-hansen/",
     bio: "Christian Hansen is Professor and Director of the Virtual and Augmented Reality Group at OVGU. His research combines virtual and augmented reality, human–machine interaction, medical visualization, and computer-assisted surgery. He develops immersive, interaction-driven systems designed to support clinical training, planning, and interventions."
   },
@@ -26,7 +26,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "Date and time TBA",
     confirmed: true,
-    image: "./images/speakers/danny-schott.webp",
+    image: "./images/speakers/danny-schott-refined.jpg",
     profile: "https://www.var.ovgu.de/lab_member/dr-danny-schott/",
     bio: "Danny Schott is a Senior Researcher in the Virtual and Augmented Reality Group at OVGU. His interdisciplinary work brings together interaction design, mixed reality, intelligent systems, and human–computer interaction. He develops spatial and experiential technologies that make complex medical and scientific information easier to understand."
   },
@@ -37,7 +37,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "8 December 2026 · Time TBA",
     confirmed: true,
-    image: "./images/speakers/christoph-hoeschen.jpg",
+    image: "./images/speakers/christoph-hoeschen-refined.jpg",
     profile: "https://www.lms.ovgu.de/lms/en/Group+Members/Head+of+the+group/Prof_+Dr_+rer_+nat_+Christoph+Hoeschen-p-40.html",
     bio: "Christoph Hoeschen leads the Chair of Medical Systems Technology at OVGU. His research spans medical imaging, radiation protection, diagnostic technologies, and intelligent healthcare systems. A central focus of his work is improving diagnostic information and clinical processes while supporting safer, more effective patient care."
   },
@@ -70,7 +70,7 @@ const speakers = [
     talk: "Talk title TBA",
     date: "Date and time TBA",
     confirmed: true,
-    image: "./images/speakers/lars-dornheim.webp",
+    image: "./images/speakers/lars-dornheim-refined.jpg",
     profile: "https://www.dornheim.tech/en/about.html",
     bio: "Lars Dornheim is a computer scientist, entrepreneur, and founder of Dornheim Medical Images. His work combines medical image analysis, artificial intelligence, mathematical modelling, and interactive 3D visualization. He focuses on translating scientific methods into intuitive software tools for medicine, research, and clinical decision support."
   },
