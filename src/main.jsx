@@ -24,7 +24,7 @@ const speakers = [
     name: "Dr. Danny Schott",
     role: "Senior Researcher, Virtual and Augmented Reality Group · OVGU",
     talk: "Talk title TBA",
-    date: "Date and time TBA",
+    date: "8 December 2026 · 11:00–12:00",
     confirmed: true,
     image: "./images/speakers/danny-schott-refined.jpg",
     profile: "https://www.var.ovgu.de/lab_member/dr-danny-schott/",
@@ -35,7 +35,7 @@ const speakers = [
     name: "Prof. Dr. rer. nat. Christoph Hoeschen",
     role: "Head of the Chair of Medical Systems Technology · OVGU",
     talk: "Talk title TBA",
-    date: "8 December 2026 · Time TBA",
+    date: "8 December 2026 · 09:00–10:00",
     confirmed: true,
     image: "./images/speakers/christoph-hoeschen-refined.jpg",
     profile: "https://www.lms.ovgu.de/lms/en/Group+Members/Head+of+the+group/Prof_+Dr_+rer_+nat_+Christoph+Hoeschen-p-40.html",
@@ -46,7 +46,7 @@ const speakers = [
     name: "Dr. Fabio Cavaliere",
     role: "Senior Researcher · Achucarro Basque Center for Neuroscience",
     talk: "Talk title TBA",
-    date: "7 December 2026 · Time TBA",
+    date: "7 December 2026 · 14:00–15:00",
     confirmed: true,
     image: "./images/speakers/fabio-cavaliere-refined.jpg",
     profile: "https://research.science.eus/investigadores/190893/detalle?lang=en",
@@ -57,7 +57,7 @@ const speakers = [
     name: "Prof. Dr. med. Peter Mertens",
     role: "Director, University Clinic for Kidney and Hypertension Diseases · University Hospital Magdeburg",
     talk: "Talk title TBA",
-    date: "7 December 2026 · 16:00",
+    date: "7 December 2026 · 16:30–17:30",
     confirmed: true,
     image: "./images/speakers/peter-mertens-refined.jpg",
     profile: "https://www.ovgu.de/Mertens.html",
@@ -68,7 +68,7 @@ const speakers = [
     name: "Dipl.-Inf. Lars Dornheim",
     role: "Founder · Dornheim Medical Images GmbH",
     talk: "Talk title TBA",
-    date: "Date and time TBA",
+    date: "8 December 2026 · 14:00–15:00",
     confirmed: true,
     image: "./images/speakers/lars-dornheim-refined.jpg",
     profile: "https://www.dornheim.tech/en/about.html",
@@ -79,7 +79,7 @@ const speakers = [
     name: "Prof. Dr. Luca Simeoni",
     role: "Research Group Leader, Institute of Molecular and Clinical Immunology · OVGU",
     talk: "Talk title TBA",
-    date: "8 December 2026 · Time TBA",
+    date: "8 December 2026 · 10:00–11:00",
     confirmed: true,
     image: "./images/speakers/luca-simeoni-refined.jpg",
     profile: "https://forschung-sachsen-anhalt.de/pl/simeoni-82434",
@@ -90,7 +90,7 @@ const speakers = [
     name: "Prof. Dr. Michael Bosnjak",
     role: "Head, Psychological Research Methods · Trier University",
     talk: "Talk title TBA",
-    date: "7 December 2026 · Time TBA",
+    date: "7 December 2026 · 15:30–16:30",
     confirmed: true,
     image: "./images/speakers/michael-bosnjak-refined.jpg",
     profile: "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-i/faecher-und-institute/psychologie/professuren/abt-psych-methodenlehre/team/prof-dr-michael-bosnjak",
@@ -102,26 +102,28 @@ const schedule = [
   {
     day: "Day 01", date: "7 December 2026", weekday: "Monday",
     items: [
-      { time: "13:00 – 14:00", type: "session", title: "Welcome", speaker: "Speaker TBA" },
-      { time: "TBA", type: "talk", title: "Talk title TBA", speaker: "Dr. Fabio Cavaliere" },
-      { time: "TBA", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. Michael Bosnjak" },
+      { time: "13:00 – 14:00", type: "session", title: "Welcome", speaker: "Prof. Dr.-Ing. Ernesto W. De Luca" },
+      { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Prof. Fabio Cavaliere" },
       { time: "15:00 – 15:30", type: "break", title: "Coffee Break" },
-      { time: "16:00", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. med. Peter Mertens" },
-      { time: "18:30", type: "special", title: "Meet and Greet", speaker: "Innovation Xperience Incubator" }
+      { time: "15:30 – 16:30", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. Michael Bosnjak" },
+      { time: "16:30 – 17:30", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. med. Peter Mertens" },
+      { time: "17:30 – 18:30", type: "talk", title: "Talk title TBA", speaker: "Francesco Paolo Casale · Helmholtz Munich" },
+      { time: "19:30", type: "special", title: "Incubator Get-Together Party", speaker: "For invited speakers" }
     ]
   },
   {
     day: "Day 02", date: "8 December 2026", weekday: "Tuesday",
     items: [
       { time: "08:00 – 09:00", type: "break", title: "Welcome Coffee" },
-      { time: "TBA", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. rer. nat. Christoph Hoeschen" },
-      { time: "TBA", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. Luca Simeoni" },
-      { time: "11:00 – 13:00", type: "break", title: "Lunch Break" },
-      { time: "13:00 – 14:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
-      { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Speaker TBA" },
+      { time: "09:00 – 10:00", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. rer. nat. Christoph Hoeschen" },
+      { time: "10:00 – 11:00", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. Luca Simeoni" },
+      { time: "11:00 – 12:00", type: "talk", title: "Talk title TBA", speaker: "Dr. Danny Schott" },
+      { time: "12:00 – 13:00", type: "break", title: "Lunch Break" },
+      { time: "13:00 – 14:00", type: "talk", title: "Talk title TBA", speaker: "Prof. Gabriele Arcidiacono" },
+      { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Dipl.-Inf. Lars Dornheim" },
       { time: "15:00 – 15:30", type: "break", title: "Coffee Break" },
-      { time: "15:30 – 16:30", type: "session", title: "Panel Discussion", speaker: "Panellists TBA" },
-      { time: "16:30", type: "special", title: "Closing Session", speaker: "Details TBA" }
+      { time: "15:30 – 16:30", type: "talk", title: "Talk title TBA", speaker: "Ingo Heyroth" },
+      { time: "16:30 – 17:30", type: "special", title: "Discussion and Incubator Introduction", speaker: "Innovation Xperience Incubator" }
     ]
   }
 ];
@@ -403,7 +405,7 @@ function Schedule() {
       <div className="container">
         <FadeIn className="schedule-page-head">
           <div><span className="kicker">2026 programme</span><h2>Two days.<br /><em>One shared future.</em></h2></div>
-          <p>The programme framework is ready. Speaker names and talk details will be announced as they are confirmed.</p>
+          <p>The two-day programme brings together expert talks, shared discussion, and time to connect. Individual talk titles will be announced soon.</p>
         </FadeIn>
         <div className="schedule-days">
           {schedule.map((day, dayIndex) => <FadeIn className="schedule-day glass" key={day.day} delay={dayIndex * .1}>
