@@ -61,7 +61,7 @@ const speakers = [
     confirmed: true,
     image: "./images/speakers/peter-mertens-refined.jpg",
     profile: "https://www.ovgu.de/Mertens.html",
-    bio: "Professor Mertens is the Director of the Clinic of Nephrology, Hypertension, Diabetes and Endocrinology at the Otto-von-Guericke University Magdeburg. His expertise ranges from clinical trial performance to basic science, the study of autoimmune disease to inflammatory glomerular scarring. Besides his position as head of the clinic since 2009 he serves as Fachkollegiat of the DFG. His team has set up a program to explore innovative steps towards early diagnosis of nerve damage pattern, a common sequelae of diabetes and the elderly patients. His journey has taken unexpected paths, especially regarding the computation of sensor derived data collected from the feet. In the last years he has set up decision support systems that are build around a gamification platform. This allows to derive a plethora of data to predict frailty, determine the actual nerve health status and the cognition of patients. His group is empowered by AI experts and programmers, medical doctors and clinician scientists. Overall his group wishes to advance the translational aspects of machine learning algorithms."
+    bio: "Peter Mertens directs the Clinic of Nephrology, Hypertension, Diabetes and Endocrinology at University Hospital Magdeburg. His research combines clinical medicine and machine learning to detect nerve damage and assess nerve health. His team develops sensor-based decision support systems to predict frailty and support early diagnosis."
   },
   {
     id: 6,
