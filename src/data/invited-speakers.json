@@ -1,6 +1,6 @@
 {
   "publicationPolicy": "Only speakers with status confirmed may be shown on the public website.",
-  "lastReviewed": "2026-10-29",
+  "lastReviewed": "2026-11-16",
   "speakers": [
     {
       "id": "ingo-heyroth",
@@ -61,15 +61,16 @@
       "location": "Magdeburg, Germany",
       "affiliation": "Otto von Guericke University Magdeburg / University Hospital Magdeburg",
       "role": "Director, University Clinic for Kidney and Hypertension Diseases, Diabetology and Endocrinology",
-      "bioNotes": "Physician and researcher in nephrology and hypertension with work spanning kidney disease, digital medicine, telemedicine, mobile health, and artificial intelligence.",
+      "bioNotes": "Professor Mertens is the Director of the Clinic of Nephrology, Hypertension, Diabetes and Endocrinology at the Otto-von-Guericke University Magdeburg. His expertise ranges from clinical trial performance to basic science, the study of autoimmune disease to inflammatory glomerular scarring. Besides his position as head of the clinic since 2009 he serves as Fachkollegiat of the DFG. His team has set up a program to explore innovative steps towards early diagnosis of nerve damage pattern, a common sequelae of diabetes and the elderly patients. His journey has taken unexpected paths, especially regarding the computation of sensor derived data collected from the feet. In the last years he has set up decision support systems that are build around a gamification platform. This allows to derive a plethora of data to predict frailty, determine the actual nerve health status and the cognition of patients. His group is empowered by AI experts and programmers, medical doctors and clinician scientists. Overall his group wishes to advance the translational aspects of machine learning algorithms.",
       "profileUrl": "https://www.ovgu.de/Mertens.html",
       "portraitUrl": "/symposium2026/images/speakers/peter-mertens-refined.jpg",
       "proposedSchedule": {
         "date": "2026-12-07",
-        "time": "16:00",
+        "time": "16:30",
         "note": "Confirmed speaker."
       },
-      "researchNote": null
+      "researchNote": null,
+      "talkTitle": "Machine learning to understand nerve health status"
     },
     {
       "id": "martin-korte",
@@ -148,7 +149,7 @@
     {
       "id": "michael-bosnjak",
       "name": "Prof. Dr. Michael Bosnjak",
-      "status": "confirmed",
+      "status": "declined",
       "verificationStatus": "verified",
       "location": "Trier, Germany",
       "affiliation": "Trier University",
@@ -156,12 +157,8 @@
       "bioNotes": "Research focuses on psychological methodology, survey research, research synthesis, AI-supported inference, open science, and consumer psychology.",
       "profileUrl": "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-i/faecher-und-institute/psychologie/professuren/abt-psych-methodenlehre/team/prof-dr-michael-bosnjak",
       "portraitUrl": "/symposium2026/images/speakers/michael-bosnjak-refined.jpg",
-      "proposedSchedule": {
-        "date": "2026-12-07",
-        "time": null,
-        "note": "Confirmed speaker; time TBA."
-      },
-      "researchNote": null
+      "proposedSchedule": null,
+      "researchNote": "Organizer confirmed on 16 November 2026 that he is no longer attending; removed from the public speakers and programme."
     },
     {
       "id": "luca-simeoni",

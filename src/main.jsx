@@ -56,12 +56,12 @@ const speakers = [
     id: 5,
     name: "Prof. Dr. med. Peter Mertens",
     role: "Director, University Clinic for Kidney and Hypertension Diseases · University Hospital Magdeburg",
-    talk: "Talk title TBA",
+    talk: "Machine learning to understand nerve health status",
     date: "7 December 2026 · 16:30–17:30",
     confirmed: true,
     image: "./images/speakers/peter-mertens-refined.jpg",
     profile: "https://www.ovgu.de/Mertens.html",
-    bio: "Peter Mertens directs the University Clinic for Kidney and Hypertension Diseases at University Hospital Magdeburg. His clinical and scientific work covers nephrology, hypertension, and complex kidney disease. His wider research interests include digital medicine, telemedicine, mobile health, and artificial-intelligence-supported healthcare."
+    bio: "Professor Mertens is the Director of the Clinic of Nephrology, Hypertension, Diabetes and Endocrinology at the Otto-von-Guericke University Magdeburg. His expertise ranges from clinical trial performance to basic science, the study of autoimmune disease to inflammatory glomerular scarring. Besides his position as head of the clinic since 2009 he serves as Fachkollegiat of the DFG. His team has set up a program to explore innovative steps towards early diagnosis of nerve damage pattern, a common sequelae of diabetes and the elderly patients. His journey has taken unexpected paths, especially regarding the computation of sensor derived data collected from the feet. In the last years he has set up decision support systems that are build around a gamification platform. This allows to derive a plethora of data to predict frailty, determine the actual nerve health status and the cognition of patients. His group is empowered by AI experts and programmers, medical doctors and clinician scientists. Overall his group wishes to advance the translational aspects of machine learning algorithms."
   },
   {
     id: 6,
@@ -84,17 +84,6 @@ const speakers = [
     image: "./images/speakers/luca-simeoni-refined.jpg",
     profile: "https://forschung-sachsen-anhalt.de/pl/simeoni-82434",
     bio: "Luca Simeoni leads a research group at OVGU’s Institute of Clinical Immunology and Cell Therapeutics. He investigates the molecular mechanisms that govern immune-cell signalling and activation, particularly in T cells. His work also explores therapeutic immune-cell engineering and strategies for modulating immune responses."
-  },
-  {
-    id: 8,
-    name: "Prof. Dr. Michael Bosnjak",
-    role: "Head, Psychological Research Methods · Trier University",
-    talk: "Talk title TBA",
-    date: "7 December 2026 · 15:30–16:30",
-    confirmed: true,
-    image: "./images/speakers/michael-bosnjak-refined.jpg",
-    profile: "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-i/faecher-und-institute/psychologie/professuren/abt-psych-methodenlehre/team/prof-dr-michael-bosnjak",
-    bio: "Michael Bosnjak heads the Department of Psychological Research Methods at Trier University. His research covers survey methodology, research synthesis, open science, consumer psychology, and AI-supported inference methods. He develops rigorous approaches for collecting, evaluating, and interpreting evidence in psychological and social research."
   }
 ];
 
@@ -105,8 +94,7 @@ const schedule = [
       { time: "13:00 – 14:00", type: "session", title: "Welcome", speaker: "Prof. Dr.-Ing. Ernesto W. De Luca" },
       { time: "14:00 – 15:00", type: "talk", title: "Talk title TBA", speaker: "Prof. Fabio Cavaliere" },
       { time: "15:00 – 15:30", type: "break", title: "Coffee Break" },
-      { time: "15:30 – 16:30", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. Michael Bosnjak" },
-      { time: "16:30 – 17:30", type: "talk", title: "Talk title TBA", speaker: "Prof. Dr. med. Peter Mertens" },
+      { time: "16:30 – 17:30", type: "talk", title: "Machine learning to understand nerve health status", speaker: "Prof. Dr. med. Peter Mertens" },
       { time: "17:30 – 18:30", type: "talk", title: "Talk title TBA", speaker: "Francesco Paolo Casale · Helmholtz Munich" },
       { time: "19:30", type: "special", title: "Incubator Get-Together Party", speaker: "For invited speakers" }
     ]
