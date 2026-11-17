@@ -1,6 +1,6 @@
 {
   "publicationPolicy": "Only speakers with status confirmed may be shown on the public website.",
-  "lastReviewed": "2026-11-16",
+  "lastReviewed": "2026-11-17",
   "speakers": [
     {
       "id": "ingo-heyroth",
@@ -18,22 +18,18 @@
       "researchNote": "The supplied management page no longer lists him; current role and portrait need confirmation before publication."
     },
     {
-      "id": "christian-hansen",
-      "name": "Prof. Dr. Christian Hansen",
+      "id": "celina-messner",
+      "name": "Celina Messner",
       "status": "confirmed",
-      "verificationStatus": "verified",
+      "verificationStatus": "partial",
       "location": "Magdeburg, Germany",
-      "affiliation": "Otto von Guericke University Magdeburg",
-      "role": "Professor and Director, Virtual and Augmented Reality Group",
-      "bioNotes": "Research focuses on virtual and augmented reality, human-machine interaction, medical visualization, computer-assisted surgery, and immersive systems for clinical environments.",
-      "profileUrl": "https://www.var.ovgu.de/lab_member/prof-dr-christian-hansen/",
-      "portraitUrl": "/symposium2026/images/speakers/christian-hansen-refined.jpg",
-      "proposedSchedule": {
-        "date": null,
-        "time": null,
-        "note": "Confirmed speaker; date and time TBA."
-      },
-      "researchNote": null
+      "affiliation": "HASOMED GmbH",
+      "role": "Head of Product, Conversational AI",
+      "bioNotes": "Leads conversational AI product development for therapy and patient care at HASOMED.",
+      "profileUrl": null,
+      "portraitUrl": null,
+      "proposedSchedule": null,
+      "researchNote": "The submitted proposal discusses synthetic therapy and a possible joint talk. The final title, schedule, and co-speaker details are pending."
     },
     {
       "id": "danny-schott",

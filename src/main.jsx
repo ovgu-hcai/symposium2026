@@ -10,14 +10,12 @@ import "./styles.css";
 const speakers = [
   {
     id: 1,
-    name: "Prof. Dr. Christian Hansen",
-    role: "Professor and Director, Virtual and Augmented Reality Group · OVGU",
+    name: "Celina Messner",
+    role: "Head of Product, Conversational AI · HASOMED GmbH",
     talk: "Talk title TBA",
     date: "Date and time TBA",
     confirmed: true,
-    image: "./images/speakers/christian-hansen-refined.jpg",
-    profile: "https://www.var.ovgu.de/lab_member/prof-dr-christian-hansen/",
-    bio: "Christian Hansen is Professor and Director of the Virtual and Augmented Reality Group at OVGU. His research combines virtual and augmented reality, human–machine interaction, medical visualization, and computer-assisted surgery. He develops immersive, interaction-driven systems designed to support clinical training, planning, and interventions."
+    bio: "Celina Messner leads conversational AI product development at HASOMED, where she works on solutions for therapy and patient care."
   },
   {
     id: 2,
