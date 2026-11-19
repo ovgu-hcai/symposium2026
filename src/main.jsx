@@ -118,6 +118,8 @@ const organisers = [
   { group: "General Chair", name: "Prof. Dr.-Ing. Ernesto William De Luca", role: "Head, Human-Centred Artificial Intelligence Research Group", image: "./images/organisers/ernesto.jpg", email: "ernesto.deluca@ovgu.de", website: "https://ernestodeluca.eu/cv" },
   { group: "Local Organising Committee", name: "M.Sc. Het Darshan Mehta", role: "PhD Researcher · HCAI, OVGU", image: "./images/organisers/het.jpeg", email: "het.mehta@ovgu.de", website: "https://hetmehta.eu/" },
   { group: "Local Organising Committee", name: "M.Sc. Iveta Jaroscakova", role: "Innovation Experience Incubator Coordinator", image: "./images/organisers/iveta.jpeg", email: "iveta.jaroscakova@ovgu.de", website: "https://www.hcai.ovgu.de/" },
+  { group: "Local Organising Committee", name: "Gaetano", image: "./images/organisers/gaetano.jpg", containPortrait: true },
+  { group: "Local Organising Committee", name: "M.Sc. Oleeviya Babu Poikarayil", role: "PhD Student · HCAI, OVGU", image: "./images/organisers/oleeviya.png", email: "oleeviya.babu@ovgu.de", website: "https://hcai.ovgu.de/dtdh/de/Team/Wissenschaftliche+Mitarbeiter/Oleeviya-p-957.html" },
   { group: "Staff", name: "B.Sc. Gavin Rony Correia", role: "", image: "./images/organisers/gavin.jpeg", email: "gavin.correia@gei.de", website: "https://www.hcai.ovgu.de/" },
   { group: "Staff", name: "B.Sc. Shivnandini Ravikumar Chinnannvar", role: "", image: "./images/organisers/shivnandini.jpeg", email: "shivnandini.chinnannvar@gei.de", website: "https://www.hcai.ovgu.de/" },
   { group: "Staff", name: "B.Sc. Yashashwini Sidramappa Awate", role: "", image: "./images/organisers/yashashwini-awate.jpg", email: "yashashwini.awate@st.ovgu.de", website: "https://de.linkedin.com/in/yashashwini-awate-b2abb4227" }
@@ -423,8 +425,11 @@ function Organisers() {
           <div className="organiser-grid">
             {organisers.filter(person => person.group === group).map((person, index) =>
               <FadeIn className="organiser-card glass" key={person.name} delay={index * .07}>
-                <div className="organiser-photo"><img src={person.image} alt={person.name} loading="lazy" /></div>
-                <div className="organiser-info"><h3>{person.name}</h3>{person.role && <p>{person.role}</p>}<div className="organiser-links"><a href={`mailto:${person.email}`}><Mail size={14} />{person.email}</a><a href={person.website} target="_blank" rel="noreferrer"><Globe size={14} />Profile</a></div></div>
+                <div className={person.containPortrait ? "organiser-photo organiser-photo--contain" : "organiser-photo"}><img src={person.image} alt={person.name} loading="lazy" /></div>
+                <div className="organiser-info"><h3>{person.name}</h3>{person.role && <p>{person.role}</p>}{(person.email || person.website) && <div className="organiser-links">
+                   {person.email && <a href={`mailto:${person.email}`}><Mail size={14} />{person.email}</a>}
+                   {person.website && <a href={person.website} target="_blank" rel="noreferrer"><Globe size={14} />Profile</a>}
+                 </div>}</div>
               </FadeIn>
             )}
           </div>
